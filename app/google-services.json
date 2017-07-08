@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "696796514139",
+    "firebase_url": "https://snu-test.firebaseio.com",
+    "project_id": "snu-test",
+    "storage_bucket": "snu-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696796514139:android:364685356b2d322f",
+        "android_client_info": {
+          "package_name": "com.example.raman.snu_exams2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696796514139-n2h8lpusn10oda9h0i7gbauvhq2sg74f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.raman.snu_exams2",
+            "certificate_hash": "5e8cbec1bc3a6726bc8957e144b34b019c5cb487"
+          }
+        },
+        {
+          "client_id": "696796514139-chtnot73grc5mjsjvghlumhk215emio6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdlbSOrvuwEA-y2jJEoRvir1YSvBn2IMw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696796514139-chtnot73grc5mjsjvghlumhk215emio6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

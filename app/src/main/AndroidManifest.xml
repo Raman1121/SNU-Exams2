@@ -9,19 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OpeningScreen">
+
+        <activity android:name=".OpeningScreen"></activity>
+
+        <activity
+            android:name=".EngineeringCourses"
+            android:label="Engineering Courses" />
+        <activity
+            android:name=".NaturalScienceCourses"
+            android:label="Natural Sciences Courses" />
+        <activity
+            android:name=".HumanitiesCourses"
+            android:label="Humanities Courses" />
+        <activity android:name=".GoogleSignIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".EngineeringCourses"
-                  android:label="Engineering Courses"/>
-        <activity android:name=".NaturalScienceCourses"
-                  android:label="Natural Sciences Courses"/>
-        <activity android:name=".HumanitiesCourses"
-                  android:label="Humanities Courses"></activity>
     </application>
 
 </manifest>

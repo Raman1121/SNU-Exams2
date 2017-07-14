@@ -1,6 +1,7 @@
 package com.example.raman.snu_exams2;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.tapadoo.alerter.Alerter;
 
 import java.util.Arrays;
 
@@ -31,6 +33,16 @@ public class OpeningScreen extends AppCompatActivity {
         setContentView(R.layout.activity_opening_screen);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        //ALERTER
+        Alerter.create(this)
+                .setTitle("Hey there, WELCOME!!")
+                .setText("Exams are near, eh?")
+                .setBackgroundColorInt(Color.GRAY)
+                .setDuration(5000)
+                .enableProgress(true)
+                .show();
+
 
         FrameLayout fl1 = (FrameLayout) findViewById(R.id.frameLayout1);
         FrameLayout fl2 = (FrameLayout) findViewById(R.id.frameLayout2);
@@ -64,6 +76,11 @@ public class OpeningScreen extends AppCompatActivity {
         );
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Alerter.hide();
+    }
 }
 
 

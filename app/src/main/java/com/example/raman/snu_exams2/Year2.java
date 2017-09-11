@@ -432,12 +432,14 @@ public class Year2 extends AppCompatActivity {
         islandRef.getFile(localFile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                Toast.makeText(Year2.this, "File Downloaded", Toast.LENGTH_SHORT).show();
+                //add code here
+                startActivity(new Intent(Year2.this, download_activity.class));
+                //Toast.makeText(Year2.this, "File Downloaded", Toast.LENGTH_SHORT).show();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(Year2.this, "Download Failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Year2.this, "Download Failed", Toast.LENGTH_LONG).show();
             }
         });
     }

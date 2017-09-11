@@ -5,9 +5,12 @@ import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.Toast;
+import android.view.Menu;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -28,6 +31,36 @@ public class OpeningScreen extends AppCompatActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if(id == R.id.help){
+            //TODO Open Help activity
+            Intent intent = new Intent(OpeningScreen.this, help_activity.class);
+            startActivity(intent);
+            return true;
+        }
+        if(id == R.id.contribute){
+            //TODO open contribute Activity
+            Intent intent = new Intent(OpeningScreen.this, contribute_activity.class);
+            startActivity(intent);
+            return true;
+        }
+        if(id == R.id.about){
+            //TODO open about activity
+            Intent intent = new Intent(OpeningScreen.this, aboutme_activity.class);
+            startActivity(intent);
+            return true;
+        }
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opening_screen);
@@ -38,7 +71,7 @@ public class OpeningScreen extends AppCompatActivity {
         Alerter.create(this)
                 .setTitle("Hey there, WELCOME!!")
                 .setText("Exams are near, eh?")
-                .setBackgroundColorInt(Color.GRAY)
+                .setBackgroundColorInt(Color.DKGRAY)
                 .setDuration(5000)
                 .enableProgress(true)
                 .show();

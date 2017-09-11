@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SNU-Exams2</string>
     <string name="title_activity_exam_type">ExamType</string>
+    <string name="title_activity_year2">Year2</string>
 </resources>

@@ -40,20 +40,20 @@ public class OpeningScreen extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if(id == R.id.help){
-            //TODO Open Help activity
+
             Intent intent = new Intent(OpeningScreen.this, help_activity.class);
             startActivity(intent);
             return true;
         }
         if(id == R.id.contribute){
-            //TODO open contribute Activity
+
             Intent intent = new Intent(OpeningScreen.this, contribute_activity.class);
             startActivity(intent);
             return true;
         }
         if(id == R.id.about){
-            //TODO open about activity
-            Intent intent = new Intent(OpeningScreen.this, aboutme_activity.class);
+
+            Intent intent = new Intent(OpeningScreen.this, about_me2.class);
             startActivity(intent);
             return true;
         }

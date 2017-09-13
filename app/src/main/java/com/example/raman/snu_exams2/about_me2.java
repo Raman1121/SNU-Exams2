@@ -34,7 +34,7 @@ public class about_me2 extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(about_me2.this, "Kuch nhi hota isse :p", Toast.LENGTH_SHORT).show();
+
                 startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://www.facebook.com/raman.dutt.927")));
             }
         });

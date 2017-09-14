@@ -95,6 +95,7 @@ public class OpeningScreen extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         startActivity(new Intent(OpeningScreen.this, NaturalScienceCourses.class));
+                        Toast.makeText(OpeningScreen.this, "Content not available yet :(", Toast.LENGTH_SHORT).show();
                     }
                 }
         );
@@ -104,6 +105,7 @@ public class OpeningScreen extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         startActivity(new Intent(OpeningScreen.this, HumanitiesCourses.class));
+                        Toast.makeText(OpeningScreen.this, "Content not available yet :(", Toast.LENGTH_SHORT).show();
                     }
                 }
         );

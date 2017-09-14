@@ -45,7 +45,5 @@ public class about_me2 extends AppCompatActivity {
 
         TextView text = (TextView)findViewById(R.id.description);
         text.setGravity(Gravity.LEFT);
-
-
     }
 }

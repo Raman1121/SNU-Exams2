@@ -41,7 +41,7 @@ public class OpeningScreen extends AppCompatActivity {
         int id = item.getItemId();
         if(id == R.id.help){
 
-            Intent intent = new Intent(OpeningScreen.this, help_activity.class);
+            Intent intent = new Intent(OpeningScreen.this, help_activity2.class);
             startActivity(intent);
             return true;
         }

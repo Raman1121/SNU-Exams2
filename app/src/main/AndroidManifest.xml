@@ -48,6 +48,10 @@
         <activity
             android:name=".about_me2"
             android:label="@string/title_activity_about_me2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".help_activity2"
+            android:label="@string/title_activity_help_activity2"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

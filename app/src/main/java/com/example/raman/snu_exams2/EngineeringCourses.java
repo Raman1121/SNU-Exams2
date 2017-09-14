@@ -38,7 +38,7 @@ public class EngineeringCourses extends AppCompatActivity {
                 .enableProgress(true)
                 .show();
 
-        String engCourses[] = {"PHY-101", "PHY-102", "CHE-101", "CHE-102", "MAT-201", "MAT-202", "MAT-203", "EED-101", "EED-102", "EED-103", "CSD-101", "CSD-201", "MED-101", "MED-102", "CED-101", "CED-102", "CHY-111"};
+        String engCourses[] = {"PHY-101", "PHY-102", "CHE-101", "CHE-102", "MAT-201", "MAT-202", "MAT-203", "EED-101", "EED-102", "EED-103","EED-206", "CSD-101", "CSD-201","CSD-205","CSD-206","CSD-207", "MED-101", "MED-102", "CED-101", "CED-102", "CHY-111"};
 
         //LISTVIEW
         ListAdapter adapter = new customAdapter(this, engCourses);

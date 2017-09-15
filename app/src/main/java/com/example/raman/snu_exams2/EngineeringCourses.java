@@ -4,12 +4,16 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.dynamitechetan.flowinggradient.FlowingGradientClass;
 import com.tapadoo.alerter.Alerter;
 
 import static android.os.Build.VERSION_CODES.M;
@@ -37,6 +41,13 @@ public class EngineeringCourses extends AppCompatActivity {
                 .setDuration(5000)
                 .enableProgress(true)
                 .show();
+
+        LinearLayout ll = (LinearLayout)findViewById(R.id.ll);
+        FlowingGradientClass grad = new FlowingGradientClass();
+        grad.setBackgroundResource(R.drawable.translate)
+                .onLinearLayout(ll)
+                .setTransitionDuration(4000)
+                .start();
 
         String engCourses[] = {"PHY-101", "PHY-102", "CHE-101", "CHE-102", "MAT-201", "MAT-202", "MAT-203","MAT-205", "EED-101",
                 "EED-102", "EED-103","EED-206","EED-201","EED-202","EED-209", "CSD-101", "CSD-201","CSD-205","CSD-206","CSD-207", "MED-101",

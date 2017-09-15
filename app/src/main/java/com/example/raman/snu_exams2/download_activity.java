@@ -1,9 +1,13 @@
 package com.example.raman.snu_exams2;
 
+import android.graphics.drawable.Drawable;
+import android.support.annotation.DrawableRes;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.gospelware.liquidbutton.LiquidButton;
@@ -45,8 +49,11 @@ public class download_activity extends AppCompatActivity {
         liquidButton.setPourFinishListener(new LiquidButton.PourFinishListener() {
             @Override
             public void onPourFinish() {
+
                 //Toast.makeText(download_activity.this, "File Downloaded", Toast.LENGTH_SHORT).show();
                 Toasty.success(getApplicationContext(), "File Downloaded :)", Toast.LENGTH_LONG, true).show();
+                LinearLayout ll = (LinearLayout) findViewById(R.id.download_act);
+                //ll.setBackgroundResource(R.drawable.);
 
                 //Toast.makeText(download_activity.this, "Exit the app and Check your file manager", Toast.LENGTH_SHORT).show();
                 Toasty.normal(getApplicationContext(), "Exit the app and Check your file manager", R.drawable.file_manager).show();

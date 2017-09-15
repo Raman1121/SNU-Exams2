@@ -46,6 +46,7 @@ dependencies {
     compile 'com.github.jrvansuita:MaterialAbout:0.1.7'
     compile 'com.afollestad:aesthetic:0.4.6'
     compile 'com.52inc:scoops:1.0.0'
+    compile 'com.dynamitechetan.flowinggradient:flowinggradient:1.1'
     testCompile 'junit:junit:4.12'
 }
 

@@ -10,10 +10,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.view.Menu;
 
 import com.afollestad.aesthetic.Aesthetic;
+import com.dynamitechetan.flowinggradient.FlowingGradientClass;
 import com.ftinc.scoop.Scoop;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -76,6 +79,21 @@ public class OpeningScreen extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+//        FrameLayout fl1 = (FrameLayout) findViewById(R.id.frameLayout1);
+//        FrameLayout fl2 = (FrameLayout) findViewById(R.id.frameLayout2);
+//        FrameLayout fl3 = (FrameLayout) findViewById(R.id.frameLayout3);
+
+        TextView tv1 = (TextView)findViewById(R.id.textView1);
+        TextView tv2 = (TextView)findViewById(R.id.textView2);
+        TextView tv3 = (TextView)findViewById(R.id.textView3);
+
+        RelativeLayout rl = (RelativeLayout)findViewById(R.id.relativeLayout);
+        FlowingGradientClass grad = new FlowingGradientClass();
+        grad.setBackgroundResource(R.drawable.translate)
+                .onRelativeLayout(rl)
+                .setTransitionDuration(4000)
+                .start();
+
         //ALERTER
         Alerter.create(this)
                 .setTitle("Hey there, WELCOME!!")
@@ -86,11 +104,9 @@ public class OpeningScreen extends AppCompatActivity {
                 .show();
 
 
-        FrameLayout fl1 = (FrameLayout) findViewById(R.id.frameLayout1);
-        FrameLayout fl2 = (FrameLayout) findViewById(R.id.frameLayout2);
-        FrameLayout fl3 = (FrameLayout) findViewById(R.id.frameLayout3);
 
-        fl1.setOnClickListener(
+
+        tv1.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -99,22 +115,20 @@ public class OpeningScreen extends AppCompatActivity {
                 }
         );
 
-        fl2.setOnClickListener(
+        tv2.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         startActivity(new Intent(OpeningScreen.this, NaturalScienceCourses.class));
-                        Toast.makeText(OpeningScreen.this, "Content not available yet :(", Toast.LENGTH_SHORT).show();
                     }
                 }
         );
 
-        fl3.setOnClickListener(
+        tv3.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         startActivity(new Intent(OpeningScreen.this, HumanitiesCourses.class));
-                        Toast.makeText(OpeningScreen.this, "Content not available yet :(", Toast.LENGTH_SHORT).show();
                     }
                 }
         );

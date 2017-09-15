@@ -2,6 +2,7 @@ package com.example.raman.snu_exams2;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,15 +13,23 @@ import android.widget.FrameLayout;
 import android.widget.Toast;
 import android.view.Menu;
 
+import com.afollestad.aesthetic.Aesthetic;
+import com.ftinc.scoop.Scoop;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.tapadoo.alerter.Alerter;
 
 import java.util.Arrays;
 
+import io.reactivex.annotations.Nullable;
+
 import static java.lang.Boolean.FALSE;
 
+
+
 public class OpeningScreen extends AppCompatActivity {
+
+
 
 
 
@@ -117,6 +126,8 @@ public class OpeningScreen extends AppCompatActivity {
         Alerter.hide();
     }
 }
+
+
 
 
 

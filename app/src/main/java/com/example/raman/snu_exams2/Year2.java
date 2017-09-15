@@ -448,6 +448,121 @@ public class Year2 extends AppCompatActivity {
                     }
                 }
             }
+
+        if (course_name.equals("CED-101")) {
+            if (year.equals("2016 Midsems")) {
+                String filename = "CED-101 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "CED-101 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+        if (course_name.equals("CED-103")) {
+            if (year.equals("2016 Midsems")) {
+                String filename = "CED-103 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "CED-103 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+        if (course_name.equals("CED-201")) {
+            if (year.equals("2016 Midsems")) {
+                String filename = "CED-201 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "CED-201 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+        if (course_name.equals("CED-202")) {
+            if (year.equals("2016 Midsems")) {
+                String filename = "CED-202 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "CED-202 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+         if (course_name.equals("CED-204")) {
+            if (year.equals("2016 Midsems")) {
+                String filename = "CED-204 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "CED-204 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+        if (course_name.equals("CED-206")) {
+            if (year.equals("2016 Midsems")) {
+                String filename = "CED-206 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "CED-206 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
     }
 
     public void sendEmail(){

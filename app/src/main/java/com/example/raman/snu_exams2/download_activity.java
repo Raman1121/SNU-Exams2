@@ -47,7 +47,7 @@ public class download_activity extends AppCompatActivity {
             public void onPourFinish() {
                 //Toast.makeText(download_activity.this, "File Downloaded", Toast.LENGTH_SHORT).show();
                 Toasty.success(getApplicationContext(), "File Downloaded :)", Toast.LENGTH_LONG, true).show();
-                
+
                 //Toast.makeText(download_activity.this, "Exit the app and Check your file manager", Toast.LENGTH_SHORT).show();
                 Toasty.normal(getApplicationContext(), "Exit the app and Check your file manager", R.drawable.file_manager).show();
             }

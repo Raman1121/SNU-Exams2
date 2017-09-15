@@ -19,4 +19,8 @@
         android:title="Contribute"
         android:orderInCategory="101"
         app:showAsAction="never"/>
+    <item android:title="Rate"
+        android:id="@+id/rate"
+        android:orderInCategory="103"
+        app:showAsAction="never"/>
 </menu>

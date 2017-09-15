@@ -46,7 +46,7 @@ public class EngineeringCourses extends AppCompatActivity {
         FlowingGradientClass grad = new FlowingGradientClass();
         grad.setBackgroundResource(R.drawable.translate)
                 .onLinearLayout(ll)
-                .setTransitionDuration(4000)
+                .setTransitionDuration(3000)
                 .start();
 
         String engCourses[] = {"PHY-101", "PHY-102", "CHE-101", "CHE-102", "MAT-201", "MAT-202", "MAT-203","MAT-205", "EED-101",

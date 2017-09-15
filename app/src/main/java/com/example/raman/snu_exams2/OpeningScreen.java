@@ -69,6 +69,11 @@ public class OpeningScreen extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+        if(id == R.id.rate){
+            Intent intent = new Intent(OpeningScreen.this, rate1.class);
+            startActivity(intent);
+            return true;
+        }
         return true;
     }
 
@@ -91,7 +96,7 @@ public class OpeningScreen extends AppCompatActivity {
         FlowingGradientClass grad = new FlowingGradientClass();
         grad.setBackgroundResource(R.drawable.translate)
                 .onRelativeLayout(rl)
-                .setTransitionDuration(4000)
+                .setTransitionDuration(3000)
                 .start();
 
         //ALERTER

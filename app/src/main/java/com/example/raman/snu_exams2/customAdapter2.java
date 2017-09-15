@@ -1,6 +1,7 @@
 package com.example.raman.snu_exams2;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -31,6 +32,7 @@ public class customAdapter2 extends ArrayAdapter<String> {
         String year = getItem(position);
         TextView text = (TextView)customView.findViewById(R.id.textView);
         text.setText(year);
+        text.setTextColor(Color.WHITE);
 
         return customView;
 

@@ -2,6 +2,7 @@ package com.example.raman.snu_exams2;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -23,10 +24,12 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import java.io.File;
 import java.io.IOException;
 
+import es.dmoral.toasty.Toasty;
 import uk.co.samuelwall.materialtaptargetprompt.MaterialTapTargetPrompt;
 
 import static android.R.id.message;
@@ -461,7 +464,9 @@ public class Year2 extends AppCompatActivity {
         String file = course_name + "_" + examType + ".pdf";
         StorageReference islandRef = storageRef.child(course_name).child(examType).child(year).child(file);
 
-        Toast.makeText(this, "Downloading File", Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "Downloading File", Toast.LENGTH_LONG).show();
+        Toasty.info(getApplicationContext(), "Downloading File", Toast.LENGTH_LONG, true).show();
+
 
         File rootPath = new File(Environment.getExternalStorageDirectory(), "SNU-EXAMS-Question Papers");
         if(!rootPath.exists()) {
@@ -480,7 +485,8 @@ public class Year2 extends AppCompatActivity {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(Year2.this, "Download Failed", Toast.LENGTH_LONG).show();
+                //Toast.makeText(Year2.this, "Download Failed", Toast.LENGTH_LONG).show();
+                Toasty.error(getApplicationContext(), "Download Failed :( ", Toast.LENGTH_LONG, true).show();
             }
         });
     }
@@ -507,5 +513,7 @@ public class Year2 extends AppCompatActivity {
         }
         return true;
     }
+
+
 
 }

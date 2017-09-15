@@ -8,6 +8,8 @@ import android.widget.Toast;
 
 import com.gospelware.liquidbutton.LiquidButton;
 
+import es.dmoral.toasty.Toasty;
+
 import static android.os.Build.VERSION_CODES.M;
 import static com.example.raman.snu_exams2.R.id.textView;
 
@@ -28,7 +30,8 @@ public class download_activity extends AppCompatActivity {
 
         LiquidButton liquidButton = (LiquidButton) findViewById(R.id.button);
 
-        Toast.makeText(this, "Tap on the screen again ;) ", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, "Tap on the screen again ;) ", Toast.LENGTH_SHORT).show();
+        Toasty.warning(getApplicationContext(), "Tap on the screen again ;)", Toast.LENGTH_LONG, true).show();
 
         liquidButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,8 +45,11 @@ public class download_activity extends AppCompatActivity {
         liquidButton.setPourFinishListener(new LiquidButton.PourFinishListener() {
             @Override
             public void onPourFinish() {
-                Toast.makeText(download_activity.this, "File Downloaded", Toast.LENGTH_SHORT).show();
-                Toast.makeText(download_activity.this, "Exit the app and Check your file manager", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(download_activity.this, "File Downloaded", Toast.LENGTH_SHORT).show();
+                Toasty.success(getApplicationContext(), "File Downloaded :)", Toast.LENGTH_LONG, true).show();
+                
+                //Toast.makeText(download_activity.this, "Exit the app and Check your file manager", Toast.LENGTH_SHORT).show();
+                Toasty.normal(getApplicationContext(), "Exit the app and Check your file manager", R.drawable.file_manager).show();
             }
             @Override
             public void onProgressUpdate(float progress) {

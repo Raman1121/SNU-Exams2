@@ -1,5 +1,7 @@
 package com.example.raman.snu_exams2;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -12,6 +14,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Arrays;
 
 import es.dmoral.toasty.Toasty;
+
+import static android.R.id.message;
 
 public class rate1 extends AppCompatActivity implements RatingDialogListener {
 
@@ -32,12 +36,16 @@ public class rate1 extends AppCompatActivity implements RatingDialogListener {
 
     @Override
     public void onPositiveButtonClicked(int i, @NotNull String s) {
-        Toast.makeText(this, "Positive button clicked", Toast.LENGTH_SHORT).show();
+        String feedback = s;
+        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                "mailto","rd650@snu.edu.in", null));
+        intent.putExtra(Intent.EXTRA_TEXT, feedback + "\n\nThe ratings given are: " + i);
+        startActivity(Intent.createChooser(intent, "Choose an Email client :"));
     }
 
     @Override
     public void onNegativeButtonClicked() {
-        Toast.makeText(this, "Negative button clicked", Toast.LENGTH_SHORT).show();
+
     }
     private void showDialog() {
         new AppRatingDialog.Builder()

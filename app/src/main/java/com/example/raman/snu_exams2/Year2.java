@@ -183,6 +183,27 @@ public class Year2 extends AppCompatActivity {
             }
         }
 
+        if(course_name.equals("CSD-206")){
+            if (year.equals("2016 Midsems")){
+                String filename = "CSD-206 2016 Midsem.pdf";
+                if (hasPermission()){
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                }else{
+                    requestPerms();
+                }
+            }
+
+            if(year.equals("2016 Endsems")){
+                String filename = "CSD-206 2016 Endsem.pdf";
+                if (hasPermission()){
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                }else{
+                    requestPerms();
+                }
+            }
+        }
+
+
         if (course_name.equals("MAT-201")){
             if(year.equals("2016 Midsems")){
 

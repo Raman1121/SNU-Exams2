@@ -43,6 +43,7 @@ public class download_activity extends AppCompatActivity {
             @Override
             public void onPourFinish() {
                 Toast.makeText(download_activity.this, "File Downloaded", Toast.LENGTH_SHORT).show();
+                Toast.makeText(download_activity.this, "Exit the app and Check your file manager", Toast.LENGTH_SHORT).show();
             }
             @Override
             public void onProgressUpdate(float progress) {

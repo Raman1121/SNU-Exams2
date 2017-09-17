@@ -50,6 +50,9 @@ public class GoogleSignIn extends AppCompatActivity {
                 .setTransitionDuration(3000)
                 .start();
 
+        SignInButton sButton = (SignInButton)findViewById(R.id.googleButton);
+        sButton.setElevation(1000);
+
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override

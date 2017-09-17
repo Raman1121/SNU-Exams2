@@ -4,10 +4,14 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.dynamitechetan.flowinggradient.FlowingGradientClass;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -38,6 +42,13 @@ public class GoogleSignIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_google_sign_in);
+
+        RelativeLayout rl = (RelativeLayout)findViewById(R.id.relLay);
+        FlowingGradientClass grad = new FlowingGradientClass();
+        grad.setBackgroundResource(R.drawable.translate)
+                .onRelativeLayout(rl)
+                .setTransitionDuration(3000)
+                .start();
 
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {

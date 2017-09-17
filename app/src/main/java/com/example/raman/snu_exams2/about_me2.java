@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +40,14 @@ public class about_me2 extends AppCompatActivity {
             }
         });
 
+        ImageView im = (ImageView)findViewById(R.id.profile);
+        im.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://www.facebook.com/raman.dutt.927")));
+            }
+        });
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("About the Developer");
         getSupportActionBar().setElevation(10);
@@ -46,4 +55,6 @@ public class about_me2 extends AppCompatActivity {
         TextView text = (TextView)findViewById(R.id.description);
         text.setGravity(Gravity.LEFT);
     }
+
+
 }

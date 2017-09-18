@@ -147,6 +147,22 @@ public class Year2 extends AppCompatActivity {
         }
 
         if(course_name.equals("CSD-201")){
+            if (year.equals("2015 Midsems")){
+                String filename = "CSD-201 2015 Midsem.pdf";
+                if (hasPermission()){
+                    downloadFile(filename, course_name, "Midsems", "2015");
+                }else{
+                    requestPerms();
+                }
+            }
+            if(year.equals("2015 Endsems")){
+                String filename = "CSD-201 2015 Endsem.pdf";
+                if (hasPermission()){
+                    downloadFile(filename, course_name, "Endsems", "2015");
+                }else{
+                    requestPerms();
+                }
+            }
             if (year.equals("2016 Midsems")){
                 String filename = "CSD-201 2016 Midsem.pdf";
                 if (hasPermission()){

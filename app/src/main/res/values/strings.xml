@@ -3,6 +3,17 @@
     <string name="title_activity_exam_type">ExamType</string>
     <string name="title_activity_year2">Year2</string>
     <string name="title_activity_about_me2">about_me2</string>
+    <string name="contribute">"Collecting data for this app was and still is a very difficult task."
+        "It requires a lot of emailing and patiently waiting. That is why I need your help."
+        "If you guys have any question papers that I require, you can send them to my email id"
+        "and I will add them to the database."
+        "From time to time, I will be sending notifications listing out the exact year and the course"
+        of the question papers that I need."
+        "If you have those question papers, email them to me and see the magic happen ;) "
+        "Oh, one more thing, EACH WEEK, THE HIGHEST CONTRIBUTOR WILL GET A TREAT IN GEORGIA :D"
+        "Well, if he/she agrees to pay for himself/herself :p "
+        "! TOGETHER STRONGER !"
+    </string>
     <string name="description">"Hey! I am Raman Dutt (CSE Batch of 2020). I like solving real world problems through coding."
         "Now one of the most common problem that I noticed that we face is getting the previous year"
         "question papers and that too just before the exams. This is important because many questions"
@@ -116,4 +127,7 @@
     </string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_help_activity2">help_activity2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

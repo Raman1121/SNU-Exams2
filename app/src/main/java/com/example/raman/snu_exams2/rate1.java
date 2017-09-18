@@ -1,11 +1,16 @@
 package com.example.raman.snu_exams2;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.dynamitechetan.flowinggradient.FlowingGradientClass;
+import com.sdsmdg.harjot.rotatingtext.RotatingTextWrapper;
+import com.sdsmdg.harjot.rotatingtext.models.Rotatable;
 import com.stepstone.apprating.AppRatingDialog;
 import com.stepstone.apprating.listener.RatingDialogListener;
 
@@ -32,6 +37,24 @@ public class rate1 extends AppCompatActivity implements RatingDialogListener {
 
         showDialog();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Rate this app");
+
+        RelativeLayout rl = (RelativeLayout)findViewById(R.id.relLayout);
+        FlowingGradientClass grad = new FlowingGradientClass();
+        grad.setBackgroundResource(R.drawable.translate)
+                .onRelativeLayout(rl)
+                .setTransitionDuration(3000)
+                .start();
+
+        RotatingTextWrapper rotatingTextWrapper = (RotatingTextWrapper) findViewById(R.id.custom_switcher);
+        rotatingTextWrapper.setSize(60);
+
+        Rotatable rotatable = new Rotatable(Color.parseColor("#FFA036"), 1000, "YOU", "Toi", "君は", "Sie", "您", "당신");
+        rotatable.setSize(60);
+        rotatable.setAnimationDuration(500);
+        rotatable.setColor(Color.YELLOW);
+
+        rotatingTextWrapper.setContent("Thank ?", rotatable);
     }
 
     @Override

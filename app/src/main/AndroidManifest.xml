@@ -53,7 +53,8 @@
             android:name=".help_activity2"
             android:label="@string/title_activity_help_activity2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".rate1"></activity>
+        <activity android:name=".rate1" />
+        <activity android:name=".share"></activity>
     </application>
 
 </manifest>

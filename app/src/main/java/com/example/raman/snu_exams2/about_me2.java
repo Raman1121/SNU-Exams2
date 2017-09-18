@@ -10,10 +10,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.dynamitechetan.flowinggradient.FlowingGradientClass;
 import com.tapadoo.alerter.Alerter;
 
 public class about_me2 extends AppCompatActivity {
@@ -54,6 +57,8 @@ public class about_me2 extends AppCompatActivity {
 
         TextView text = (TextView)findViewById(R.id.description);
         text.setGravity(Gravity.LEFT);
+
+
     }
 
 

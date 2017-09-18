@@ -37,7 +37,7 @@ public class EngineeringCourses extends AppCompatActivity {
         Alerter.create(this)
                 .setTitle("You made it this far.. GREAT!")
                 .setText("Choose your course of interest here.")
-                .setBackgroundColorInt(Color.GRAY)
+                .setBackgroundColorInt(Color.BLACK)
                 .setDuration(5000)
                 .enableProgress(true)
                 .show();
@@ -51,7 +51,7 @@ public class EngineeringCourses extends AppCompatActivity {
 
         String engCourses[] = {"PHY-101", "PHY-102", "CHE-101", "CHE-102", "MAT-201", "MAT-202", "MAT-203","MAT-205", "EED-101",
                 "EED-102", "EED-103","EED-206","EED-201","EED-202","EED-209", "CSD-101", "CSD-201","CSD-205","CSD-206","CSD-207", "MED-101",
-                "MED-102", "CED-101","CED-103","CED-201","CED-202","CED-204","CED-206","CHY-111",};
+                "MED-102","MED-201", "CHD-211","CHD-213","CHD-215","ECO-101"};
 
         //LISTVIEW
         ListAdapter adapter = new customAdapter(this, engCourses);

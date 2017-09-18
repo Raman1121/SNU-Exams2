@@ -48,6 +48,10 @@ dependencies {
     compile 'com.52inc:scoops:1.0.0'
     compile 'com.dynamitechetan.flowinggradient:flowinggradient:1.1'
     compile 'com.stepstone.apprating:app-rating:2.0.0'
+    compile 'com.allattentionhere:fabulousfilter:0.0.4'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.sdsmdg.harjot:rotatingtext:1.0.2'
+    compile 'me.spark:submitbutton:1.0.1'
     testCompile 'junit:junit:4.12'
 }
 

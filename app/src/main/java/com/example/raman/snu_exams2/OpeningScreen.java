@@ -26,6 +26,7 @@ import java.util.Arrays;
 
 import io.reactivex.annotations.Nullable;
 
+import static android.R.attr.id;
 import static java.lang.Boolean.FALSE;
 
 
@@ -51,12 +52,12 @@ public class OpeningScreen extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if(id == R.id.help){
-
-            Intent intent = new Intent(OpeningScreen.this, help_activity2.class);
-            startActivity(intent);
-            return true;
-        }
+//        if(id == R.id.help){
+//
+//            Intent intent = new Intent(OpeningScreen.this, help_activity2.class);
+//            startActivity(intent);
+//            return true;
+//        }
         if(id == R.id.contribute){
 
             Intent intent = new Intent(OpeningScreen.this, contribute_activity.class);
@@ -83,10 +84,6 @@ public class OpeningScreen extends AppCompatActivity {
         setContentView(R.layout.activity_opening_screen);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-//        FrameLayout fl1 = (FrameLayout) findViewById(R.id.frameLayout1);
-//        FrameLayout fl2 = (FrameLayout) findViewById(R.id.frameLayout2);
-//        FrameLayout fl3 = (FrameLayout) findViewById(R.id.frameLayout3);
 
         TextView tv1 = (TextView)findViewById(R.id.textView1);
         TextView tv2 = (TextView)findViewById(R.id.textView2);

@@ -1,34 +1,17 @@
-package com.example.raman.snu_exams2;
+package com.cryptex.raman.snu_exams2;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.view.Menu;
 
-import com.afollestad.aesthetic.Aesthetic;
 import com.dynamitechetan.flowinggradient.FlowingGradientClass;
-import com.ftinc.scoop.Scoop;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.tapadoo.alerter.Alerter;
-
-import java.util.Arrays;
-
-import io.reactivex.annotations.Nullable;
-
-import static android.R.attr.id;
-import static java.lang.Boolean.FALSE;
-
 
 
 public class OpeningScreen extends AppCompatActivity {

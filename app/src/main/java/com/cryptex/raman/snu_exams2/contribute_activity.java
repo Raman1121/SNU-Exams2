@@ -1,4 +1,4 @@
-package com.example.raman.snu_exams2;
+package com.cryptex.raman.snu_exams2;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -8,12 +8,10 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.spark.submitbutton.SubmitButton;
 import com.tapadoo.alerter.Alerter;
 
-import static android.R.attr.gravity;
 import static android.R.id.message;
 
 public class contribute_activity extends AppCompatActivity {

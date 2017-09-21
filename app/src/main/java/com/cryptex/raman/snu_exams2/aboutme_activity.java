@@ -1,14 +1,7 @@
-package com.example.raman.snu_exams2;
+package com.cryptex.raman.snu_exams2;
 
-import android.graphics.Color;
-import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.LinearLayout;
-
-import com.tapadoo.alerter.Alerter;
-import com.vansuita.materialabout.builder.AboutBuilder;
-import com.vansuita.materialabout.views.AboutView;
 
 public class aboutme_activity extends AppCompatActivity {
 

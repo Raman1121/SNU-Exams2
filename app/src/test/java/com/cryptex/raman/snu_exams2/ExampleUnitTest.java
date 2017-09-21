@@ -1,4 +1,4 @@
-package com.example.raman.snu_exams2;
+package com.cryptex.raman.snu_exams2;
 
 import org.junit.Test;
 

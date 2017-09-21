@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.raman.snu_exams2">
+    package="com.cryptex.raman.snu_exams2">
     //Storage permissions
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -15,47 +15,51 @@
         android:theme="@style/AppTheme"
         android:name="android.support.multidex.MultiDexApplication"
         tools:replace="label">
-        <activity android:name=".OpeningScreen" />
-        <activity
-            android:name=".EngineeringCourses"
-            android:label="Engineering Courses" />
-        <activity
-            android:name=".NaturalScienceCourses"
-            android:label="Natural Sciences Courses" />
-        <activity
-            android:name=".HumanitiesCourses"
-            android:label="Humanities Courses" />
-        <activity android:name=".GoogleSignIn">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name="com.cryptex.raman.snu_exams2.OpeningScreen">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
         <activity
-            android:name=".ExamType"
+            android:name="com.cryptex.raman.snu_exams2.EngineeringCourses"
+            android:label="Engineering Courses" />
+        <activity
+            android:name="com.cryptex.raman.snu_exams2.NaturalScienceCourses"
+            android:label="Natural Sciences Courses" />
+        <activity
+            android:name="com.cryptex.raman.snu_exams2.HumanitiesCourses"
+            android:label="Humanities Courses" />
+        <activity android:name="com.cryptex.raman.snu_exams2.GoogleSignIn">
+
+
+        </activity>
+        <activity
+            android:name="com.cryptex.raman.snu_exams2.ExamType"
             android:label="@string/title_activity_exam_type"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".testActivity" />
-        <activity android:name=".Year" />
+        <activity android:name="com.cryptex.raman.snu_exams2.testActivity" />
+        <activity android:name="com.cryptex.raman.snu_exams2.Year" />
         <activity
-            android:name=".Year2"
+            android:name="com.cryptex.raman.snu_exams2.Year2"
             android:label="@string/title_activity_year2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".help_activity" />
-        <activity android:name=".contribute_activity" />
-        <activity android:name=".aboutme_activity" />
-        <activity android:name=".download_activity" />
+        <activity android:name="com.cryptex.raman.snu_exams2.help_activity" />
+        <activity android:name="com.cryptex.raman.snu_exams2.contribute_activity" />
+        <activity android:name="com.cryptex.raman.snu_exams2.aboutme_activity" />
+        <activity android:name="com.cryptex.raman.snu_exams2.download_activity" />
         <activity
-            android:name=".about_me2"
+            android:name="com.cryptex.raman.snu_exams2.about_me2"
             android:label="@string/title_activity_about_me2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".help_activity2"
+            android:name="com.cryptex.raman.snu_exams2.help_activity2"
             android:label="@string/title_activity_help_activity2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".rate1" />
-        <activity android:name=".share"></activity>
+        <activity android:name="com.cryptex.raman.snu_exams2.rate1" />
+        <activity android:name="com.cryptex.raman.snu_exams2.share"></activity>
     </application>
 
 </manifest>

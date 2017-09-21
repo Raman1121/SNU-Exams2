@@ -1,13 +1,11 @@
-package com.example.raman.snu_exams2;
+package com.cryptex.raman.snu_exams2;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class Year extends AppCompatActivity {
 

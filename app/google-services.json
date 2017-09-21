@@ -10,15 +10,23 @@
       "client_info": {
         "mobilesdk_app_id": "1:696796514139:android:364685356b2d322f",
         "android_client_info": {
-          "package_name": "com.example.raman.snu_exams2"
+          "package_name": "com.cryptex.raman.snu_exams2"
         }
       },
       "oauth_client": [
         {
+          "client_id": "696796514139-nptmdgmkic7vgbqm25m9crvmiakfl2cu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cryptex.raman.snu_exams2",
+            "certificate_hash": "03488d558bdda14f609f42ce05b868a5322fcd88"
+          }
+        },
+        {
           "client_id": "696796514139-n2h8lpusn10oda9h0i7gbauvhq2sg74f.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.raman.snu_exams2",
+            "package_name": "com.cryptex.raman.snu_exams2",
             "certificate_hash": "5e8cbec1bc3a6726bc8957e144b34b019c5cb487"
           }
         },

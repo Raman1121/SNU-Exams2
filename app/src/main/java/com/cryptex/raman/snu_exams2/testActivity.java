@@ -1,13 +1,13 @@
-package com.example.raman.snu_exams2;
+package com.cryptex.raman.snu_exams2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class share extends AppCompatActivity {
+public class testActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_share);
+        setContentView(R.layout.activity_test);
     }
 }

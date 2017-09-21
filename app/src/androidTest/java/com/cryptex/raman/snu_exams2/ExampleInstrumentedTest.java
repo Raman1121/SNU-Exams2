@@ -1,4 +1,4 @@
-package com.example.raman.snu_exams2;
+package com.cryptex.raman.snu_exams2;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.raman.snu_exams2", appContext.getPackageName());
+        assertEquals("com.cryptex.raman.snu_exams2", appContext.getPackageName());
     }
 }

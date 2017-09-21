@@ -1,15 +1,10 @@
-package com.example.raman.snu_exams2;
+package com.cryptex.raman.snu_exams2;
 
-import android.graphics.Color;
-import android.support.annotation.DrawableRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import com.ramotion.foldingcell.FoldingCell;
-import com.tapadoo.alerter.Alerter;
-
-import static com.example.raman.snu_exams2.R.drawable.jon;
 
 public class help_activity extends AppCompatActivity {
 

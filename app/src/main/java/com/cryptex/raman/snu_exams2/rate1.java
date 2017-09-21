@@ -1,4 +1,4 @@
-package com.example.raman.snu_exams2;
+package com.cryptex.raman.snu_exams2;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.dynamitechetan.flowinggradient.FlowingGradientClass;
 import com.sdsmdg.harjot.rotatingtext.RotatingTextWrapper;
@@ -17,10 +16,6 @@ import com.stepstone.apprating.listener.RatingDialogListener;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
-
-import es.dmoral.toasty.Toasty;
-
-import static android.R.id.message;
 
 public class rate1 extends AppCompatActivity implements RatingDialogListener {
 

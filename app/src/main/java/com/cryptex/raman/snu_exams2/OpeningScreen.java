@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.view.Menu;
@@ -66,8 +68,6 @@ public class OpeningScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opening_screen);
 
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         TextView tv1 = (TextView)findViewById(R.id.textView1);
         TextView tv2 = (TextView)findViewById(R.id.textView2);
         TextView tv3 = (TextView)findViewById(R.id.textView3);
@@ -83,7 +83,7 @@ public class OpeningScreen extends AppCompatActivity {
         Alerter.create(this)
                 .setTitle("Hey there, WELCOME!!")
                 .setText("Exams are near, eh?")
-                .setBackgroundColorInt(Color.DKGRAY)
+                .setBackgroundColorInt(Color.BLACK)
                 .setDuration(5000)
                 .enableProgress(true)
                 .show();

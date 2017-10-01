@@ -42,8 +42,6 @@ public class Year2 extends AppCompatActivity {
     }
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,19 +60,16 @@ public class Year2 extends AppCompatActivity {
                         .setTarget(findViewById(R.id.fab))
                         .setPrimaryText("Got something to Contribute?")
                         .setSecondaryText("Attach your file and send the email :)")
-                        .setOnHidePromptListener(new MaterialTapTargetPrompt.OnHidePromptListener()
-                        {
+                        .setOnHidePromptListener(new MaterialTapTargetPrompt.OnHidePromptListener() {
                             @Override
-                            public void onHidePrompt(MotionEvent event, boolean tappedTarget)
-                            {
+                            public void onHidePrompt(MotionEvent event, boolean tappedTarget) {
                                 //Do something such as storing a value so that this prompt is never shown again
                                 tappedTarget = false;
                                 sendEmail();
                             }
 
                             @Override
-                            public void onHidePromptComplete()
-                            {
+                            public void onHidePromptComplete() {
 
 
                             }
@@ -107,17 +102,17 @@ public class Year2 extends AppCompatActivity {
         if (course_name.equals("CSD-101")) {
             if (year.equals("2015 Midsems")) {
                 String filename = "CSD-101 2015 Midsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2015");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
             if (year.equals("2015 Endsems")) {
                 String filename = "CSD-101 2015 Endsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Endsems", "2015");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
@@ -125,204 +120,294 @@ public class Year2 extends AppCompatActivity {
             if (year.equals("2016 Midsems")) {
 
                 String filename = "CSD-101 2016 Midsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2016");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
             if (year.equals("2016 Endsems")) {
 
                 String filename = "CSD-101 2016 Endsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Endsems", "2016");
-                }else{
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Midsems")) {
+
+                String filename = "CSD-101 2017 Midsem.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Endsems")) {
+
+                String filename = "CSD-101 2017 Endsem.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2017");
+                } else {
                     requestPerms();
                 }
             }
         }
 
-        if(course_name.equals("CSD-201")){
-            if (year.equals("2015 Midsems")){
+        if (course_name.equals("CSD-201")) {
+            if (year.equals("2015 Midsems")) {
                 String filename = "CSD-201 2015 Midsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2015");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if(year.equals("2015 Endsems")){
+            if (year.equals("2015 Endsems")) {
                 String filename = "CSD-201 2015 Endsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Endsems", "2015");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if (year.equals("2016 Midsems")){
+            if (year.equals("2016 Midsems")) {
                 String filename = "CSD-201 2016 Midsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2016");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
 
-            if(year.equals("2016 Endsems")){
+            if (year.equals("2016 Endsems")) {
                 String filename = "CSD-201 2016 Endsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Endsems", "2016");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
         }
 
-        if(course_name.equals("CSD-205")){
-            if (year.equals("2015 Midsems")){
+        if (course_name.equals("CSD-205")) {
+            if (year.equals("2015 Midsems")) {
                 String filename = "CSD-205 2015 Midsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2015");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if(year.equals("2015 Endsems")){
+            if (year.equals("2015 Endsems")) {
                 String filename = "CSD-205 2015 Endsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Endsems", "2015");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if (year.equals("2016 Midsems")){
+            if (year.equals("2016 Midsems")) {
                 String filename = "CSD-205 2016 Midsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2016");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if(year.equals("2016 Endsems")){
+            if (year.equals("2016 Endsems")) {
                 String filename = "CSD-205 2016 Endsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Endsems", "2016");
-                }else{
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Midsems")) {
+                String filename = "CSD-205 2017 Midsem.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Endsems")) {
+                String filename = "CSD-205 2017 Endsem.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2017");
+                } else {
                     requestPerms();
                 }
             }
         }
 
-        if(course_name.equals("CSD-206")){
-            if (year.equals("2015 Midsems")){
+        if (course_name.equals("CSD-206")) {
+            if (year.equals("2015 Midsems")) {
                 String filename = "CSD-206 2015 Midsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2015");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if(year.equals("2015 Endsems")){
+            if (year.equals("2015 Endsems")) {
                 String filename = "CSD-206 2015 Endsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Endsems", "2015");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if (year.equals("2016 Midsems")){
+            if (year.equals("2016 Midsems")) {
                 String filename = "CSD-206 2016 Midsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2016");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if(year.equals("2016 Endsems")){
+            if (year.equals("2016 Endsems")) {
                 String filename = "CSD-206 2016 Endsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Endsems", "2016");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
         }
 
-        if(course_name.equals("CSD-207")){
-            if (year.equals("2015 Midsems")){
+        if (course_name.equals("CSD-207")) {
+            if (year.equals("2015 Midsems")) {
                 String filename = "CSD-207 2015 Midsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2015");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if(year.equals("2015 Endsems")){
+            if (year.equals("2015 Endsems")) {
                 String filename = "CSD-207 2015 Endsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Endsems", "2015");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if (year.equals("2016 Midsems")){
+            if (year.equals("2016 Midsems")) {
                 String filename = "CSD-207 2016 Midsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2016");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if(year.equals("2016 Endsems")){
+            if (year.equals("2016 Endsems")) {
                 String filename = "CSD-207 2016 Endsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Endsems", "2016");
-                }else{
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Midsems")) {
+                String filename = "CSD-207 2017 Midsem.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Endsems")) {
+                String filename = "CSD-207 2017 Endsem.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2017");
+                } else {
                     requestPerms();
                 }
             }
         }
 
-        if (course_name.equals("MAT-201")){
-            if(year.equals("2016 Midsems")){
+        if (course_name.equals("MAT-103")) {
+            if (year.equals("2017 Midsems")) {
+
+                String filename = "MAT-103 2017 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "MAT-103 2017 Endsem.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+        if (course_name.equals("MAT-201")) {
+            if (year.equals("2016 Midsems")) {
 
                 String filename = "MAT-201 2016 Midsems.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2016");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if (year.equals("2016 Endsems")){
+            if (year.equals("2016 Endsems")) {
                 String filename = "MAT-201 2016 Endsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Endsems", "2016");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
         }
 
-        if (course_name.equals("MAT-202")){
-            if(year.equals("2016 Midsems")){
+        if (course_name.equals("MAT-205")) {
+            if (year.equals("2017 Midsems")) {
+
+                String filename = "MAT-205 2017 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Endsems")) {
+                String filename = "MAT-205 2017 Endsem.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+        if (course_name.equals("MAT-202")) {
+            if (year.equals("2016 Midsems")) {
                 String filename = "MAT-202 2016 Midsems.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2016");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
-            if (year.equals("2016 Endsems")){
+            if (year.equals("2016 Endsems")) {
                 String filename = "MAT-202 2016 Endsem.pdf";
-                if (hasPermission()){
+                if (hasPermission()) {
                     downloadFile(filename, course_name, "Endsems", "2016");
-                }else{
+                } else {
                     requestPerms();
                 }
             }
         }
 
-        if(course_name.equals("MAT-203")) {
+        if (course_name.equals("MAT-203")) {
             if (year.equals("2016 Midsems")) {
                 String filename = "MAT-203 2016 Midsem.pdf";
                 if (hasPermission()) {
@@ -358,172 +443,225 @@ public class Year2 extends AppCompatActivity {
         }
 
 
-            if (course_name.equals("PHY-101")) {
-                if (year.equals("2015 Midsems")) {
-                    String filename = "PHY-101 2015 Midsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Midsems", "2015");
-                    } else {
-                        requestPerms();
-                    }
-                }
-                if (year.equals("2015 Endsems")) {
-                    String filename = "PHY-101 2015 Endsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Endsems", "2015");
-                    } else {
-                        requestPerms();
-                    }
-                }
-                if (year.equals("2016 Midsems")) {
-                    String filename = "PHY-101 2016 Midsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Midsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
-                }
-                if (year.equals("2016 Endsems")) {
-                    String filename = "PHY-101 2016 Endsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Endsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
+        if (course_name.equals("PHY-101")) {
+            if (year.equals("2015 Midsems")) {
+                String filename = "PHY-101 2015 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2015");
+                } else {
+                    requestPerms();
                 }
             }
-
-            if (course_name.equals("PHY-102")) {
-                if (year.equals("2015 Midsems")) {
-                    String filename = "PHY-102 2015 Midsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Midsems", "2015");
-                    } else {
-                        requestPerms();
-                    }
-                }
-                if (year.equals("2015 Endsems")) {
-                    String filename = "PHY-102 2015 Endsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Endsems", "2015");
-                    } else {
-                        requestPerms();
-                    }
-                }
-                if (year.equals("2016 Midsems")) {
-                    String filename = "PHY-102 2016 Midsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Midsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
-                }
-                if (year.equals("2016 Endsems")) {
-                    String filename = "PHY-102 2016 Endsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Endsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
+            if (year.equals("2015 Endsems")) {
+                String filename = "PHY-101 2015 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2015");
+                } else {
+                    requestPerms();
                 }
             }
-
-
-            if (course_name.equals("EED-101")) {
-                if (year.equals("2016 Midsems")) {
-                    String filename = "EED-101 2016 Midsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Midsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
-                }
-                if (year.equals("2016 Endsems")) {
-                    String filename = "EED-101 2016 Endsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Endsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
+            if (year.equals("2016 Midsems")) {
+                String filename = "PHY-101 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
                 }
             }
-
-            if (course_name.equals("EED-102")) {
-                if (year.equals("2016 Midsems")) {
-                    String filename = "EED-102 2016 Midsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Midsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
-                }
-                if (year.equals("2016 Endsems")) {
-                    String filename = "EED-102 2016 Endsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Endsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
+            if (year.equals("2016 Endsems")) {
+                String filename = "PHY-101 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
                 }
             }
-
-            if (course_name.equals("EED-103")) {
-                if (year.equals("2016 Midsems")) {
-                    String filename = "EED-103 2016 Midsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Midsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
-                }
-                if (year.equals("2016 Endsems")) {
-                    String filename = "EED-103 2016 Endsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Endsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
+            if (year.equals("2017 Midsems")) {
+                String filename = "PHY-101 2017 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2017");
+                } else {
+                    requestPerms();
                 }
             }
-
-
-            if (course_name.equals("MED-101")) {
-                if (year.equals("2016 Midsems")) {
-                    String filename = "MED-101 2016 Midsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Midsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
-                }
-                if (year.equals("2016 Endsems")) {
-                    String filename = "MED-101 2016 Endsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Endsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
+            if (year.equals("2017 Endsems")) {
+                String filename = "PHY-101 2017 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2017");
+                } else {
+                    requestPerms();
                 }
             }
+        }
 
-            if (course_name.equals("MED-102")) {
-                if (year.equals("2016 Midsems")) {
-                    String filename = "MED-102 2016 Midsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Midsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
-                }
-                if (year.equals("2016 Endsems")) {
-                    String filename = "MED-102 2016 Endsems.pdf";
-                    if (hasPermission()) {
-                        downloadFile(filename, course_name, "Endsems", "2016");
-                    } else {
-                        requestPerms();
-                    }
+        if (course_name.equals("PHY-102")) {
+            if (year.equals("2015 Midsems")) {
+                String filename = "PHY-102 2015 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2015");
+                } else {
+                    requestPerms();
                 }
             }
+            if (year.equals("2015 Endsems")) {
+                String filename = "PHY-102 2015 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2015");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Midsems")) {
+                String filename = "PHY-102 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "PHY-102 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+
+        if (course_name.equals("EED-101")) {
+            if (year.equals("2016 Midsems")) {
+                String filename = "EED-101 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "EED-101 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+        if (course_name.equals("EED-102")) {
+            if (year.equals("2016 Midsems")) {
+                String filename = "EED-102 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "EED-102 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+        if (course_name.equals("EED-103")) {
+            if (year.equals("2016 Midsems")) {
+                String filename = "EED-103 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "EED-103 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+        if (course_name.equals("EED-201")) {
+            if (year.equals("2017 Midsems")) {
+                String filename = "EED-201 2017 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Endsems")) {
+                String filename = "EED-201 2017 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+        if (course_name.equals("EED-202")) {
+            if (year.equals("2017 Midsems")) {
+                String filename = "EED-202 2017 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Endsems")) {
+                String filename = "EED-202 2017 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+        if (course_name.equals("MED-101")) {
+            if (year.equals("2016 Midsems")) {
+                String filename = "MED-101 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "MED-101 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+        if (course_name.equals("MED-102")) {
+            if (year.equals("2016 Midsems")) {
+                String filename = "MED-102 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "MED-102 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
 
         if (course_name.equals("MED-201")) {
             if (year.equals("2016 Midsems")) {
@@ -544,9 +682,80 @@ public class Year2 extends AppCompatActivity {
             }
         }
 
+        if (course_name.equals("MED-201")) {
+            if (year.equals("2017 Midsems")) {
+                String filename = "MED-201 2017 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Endsems")) {
+                String filename = "MED-201 2017 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
 
-        if (course_name.equals("CHD-211")) {
+        if (course_name.equals("CED-202")) {
+
             if (year.equals("2015 Midsems")) {
+                String filename = "CED-202 2015 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2015");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2015 Endsems")) {
+                String filename = "CED-202 2015 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2015");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Midsems")) {
+                String filename = "CED-202 2016 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2016 Endsems")) {
+                String filename = "CED-202 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2016");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Midsems")) {
+                String filename = "CED-202 2017 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Endsems")) {
+                String filename = "CED-202 2017 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
+
+            if (course_name.equals("CHD-211")) {
+                 if (year.equals("2015 Midsems")) {
                 String filename = "CHD-211 2015 Midsems.pdf";
                 if (hasPermission()) {
                     downloadFile(filename, course_name, "Midsems", "2015");
@@ -652,26 +861,26 @@ public class Year2 extends AppCompatActivity {
         }
     }
 
-    public void sendEmail(){
+    public void sendEmail() {
         Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                "mailto","rd650@snu.edu.in", null));
+                "mailto", "rd650@snu.edu.in", null));
         //intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         intent.putExtra(Intent.EXTRA_TEXT, message);
         startActivity(Intent.createChooser(intent, "Choose an Email client :"));
     }
 
-    private void downloadFile(String filename, String course_name, String examType, String year){
+    private void downloadFile(String filename, String course_name, String examType, String year) {
         FirebaseStorage storage = FirebaseStorage.getInstance();
         StorageReference storageRef = storage.getReference();
         String file = course_name + "_" + examType + ".pdf";
         StorageReference islandRef = storageRef.child(course_name).child(examType).child(year).child(file);
 
         //Toast.makeText(this, "Downloading File", Toast.LENGTH_LONG).show();
-        Toasty.info(getApplicationContext(), "Downloading File", Toast.LENGTH_LONG, true).show();
+        Toasty.info(getApplicationContext(), "Downloading File", Toast.LENGTH_SHORT, true).show();
 
 
-        File rootPath = new File(Environment.getExternalStorageDirectory(), "SNU-EXAMS-Question Papers");
-        if(!rootPath.exists()) {
+        File rootPath = new File(Environment.getExternalStorageDirectory(), "SNU-EXAMS Question Papers");
+        if (!rootPath.exists()) {
             rootPath.mkdirs();
         }
 
@@ -693,29 +902,26 @@ public class Year2 extends AppCompatActivity {
         });
     }
 
-    private void requestPerms(){
+    private void requestPerms() {
         String[] permissions = new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             requestPermissions(permissions, PERMS_REQUEST_CODE);
 
         }
     }
 
-    private boolean hasPermission(){
+    private boolean hasPermission() {
         int res = 0;
         String[] permissions = new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
-        for(String perms : permissions){
+        for (String perms : permissions) {
             res = checkCallingOrSelfPermission(perms);
 
-            if(!(res == PackageManager.PERMISSION_GRANTED)){
+            if (!(res == PackageManager.PERMISSION_GRANTED)) {
                 return false;
             }
         }
         return true;
     }
-
-
-
 }

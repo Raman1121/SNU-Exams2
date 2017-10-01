@@ -45,13 +45,13 @@ public class EngineeringCourses extends AppCompatActivity {
 
         String engCourses[] = {"PHY-101", "PHY-102","MAT-103", "MAT-201", "MAT-202", "MAT-203","MAT-205", "EED-101",
                 "EED-102", "EED-103","EED-201","EED-202","EED-206","EED-209","CED-202", "CSD-101", "CSD-201","CSD-205","CSD-206","CSD-207", "MED-101",
-                "MED-102","MED-201", "CHD-211","CHD-213","CHD-215","ECO-101"};
+                "MED-102","MED-105","MED-201", "CHD-211","CHD-213","CHD-215","ECO-101"};
 
         //LISTVIEW
         ListAdapter adapter = new customAdapter(this, engCourses);
         ListView listView = (ListView)findViewById(R.id.listView);
         listView.setAdapter(adapter);
-    
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {

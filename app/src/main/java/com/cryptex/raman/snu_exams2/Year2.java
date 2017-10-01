@@ -663,6 +663,25 @@ public class Year2 extends AppCompatActivity {
             }
         }
 
+        if (course_name.equals("MED-105")) {
+            if (year.equals("2017 Midsems")) {
+                String filename = "MED-105 2017 Midsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Midsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+            if (year.equals("2017 Endsems")) {
+                String filename = "MED-105 2016 Endsems.pdf";
+                if (hasPermission()) {
+                    downloadFile(filename, course_name, "Endsems", "2017");
+                } else {
+                    requestPerms();
+                }
+            }
+        }
+
         if (course_name.equals("MED-201")) {
             if (year.equals("2016 Midsems")) {
                 String filename = "MED-201 2016 Midsems.pdf";
